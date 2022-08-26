@@ -11,12 +11,12 @@ import {
 } from './styled' 
 import { RiLogoutBoxRLine } from 'react-icons/ri';
 import {Redirect} from "react-router-dom";
-
+import dog_ownwer from "../../assets/img/png/logo/dog_owner_.png";
+import dog_walker from "../../assets/img/png/logo/dog_walker.jpg";
 const Navbar = (props) => {
-  const { isLogged, newLogUp, logOut } = props
-  //console.log(isLogged)
+  const { isLogged, newLogUp, logOut,info } = props
   return (
-    <Container>
+    <Container  isLogged = {isLogged} >
       <TitleContainer>
         <Logo src={require('../../assets/img/png/logo/dogger_icon.png')} alt='Logo' />
         <Link to="/" style={{ textDecoration: 'none'}}>
@@ -40,8 +40,22 @@ const Navbar = (props) => {
             </Link>
           </ButtonsContainer>
         ):(
-          <div><RiLogoutBoxRLine className='text-2xl hover:text-3xl animation hover:text-[#5C5F30] font-bold hover:cursor-pointer text-[#D6DD70]'
-           onClick={()=>logOut({type:'LOG_OUT'})}/></div>
+          <div className="flex items-center justify-center h-full wrap"> 
+               {info?.role === 'Paseador'?(<img
+              className={`hover:cursor-pointer hover:opacity-100  h-[70%] rounded-full [border:2px_solid_rgb(148_163_184)]`}
+              src={dog_walker}
+              alt=""
+            />):
+            (<img
+              className={`hover:cursor-pointer hover:opacity-100  h-[70%] rounded-full [border:2px_solid_rgb(148_163_184)] `}
+              src={dog_ownwer}
+              alt=""
+            />)}
+
+            <RiLogoutBoxRLine className='text-3xl   hover:text-[#5C5F30] font-bold hover:cursor-pointer text-[#D6DD70]'
+           onClick={()=>logOut({type:'LOG_OUT'})}/>
+           
+           </div>
         )
       }
          {!isLogged && (
@@ -56,7 +70,8 @@ const Navbar = (props) => {
 }
 
 const mapStateToProps = ({ account }) => ({
-  isLogged: account.isLogged
+  isLogged: account.isLogged,
+  info: account.info
 })
 
 function mapDispatchToProps(dispatch) {

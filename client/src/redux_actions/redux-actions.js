@@ -33,7 +33,7 @@ export function logIn(obj) {
    })
    .then((res) => res.json())
    .then((res) => {
-     console.log(res);
+    // console.log(res);
      dispatch({type:'LOGIN_STATUS', payload: res})
 }).catch(console.log)
     

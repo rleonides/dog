@@ -17,9 +17,12 @@ export const Container = styled.nav`
   padding: 0 0.8rem;
   z-index: 1000;
   width:100%;
+  height: ${({isLogged}) => isLogged ? "80" : 'initial'}px;
+  flex-grow:grow;
+  padding: 5px 5px;
   @media (max-width:460px) {
     flex-direction:colum;
-    justify-content: center;
+    justify-content:${({isLogged}) => isLogged ? 'space-between' : 'center'};;
     width:100%
   }
 `
@@ -46,9 +49,7 @@ export const TitleContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
-
-  height:80px;
+  margin:5px;
  
   @media (max-width:460px) {
     height:initial;
