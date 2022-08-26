@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+/* Reset CSS */
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
+	max-height: 100vh;
+	padding:0;
+	margin:0;
+}
+
+
+.principal-container {
+	background: #FFFFF9;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	
+	display:flex;
+	justify-content: flex-start;
+	align-items:center;
+	min-height: 100vh;
+	max-width: 100vw;
+	flex-direction: column;
+	
+	
+}
+
+
+* {
+	box-sizing: border-box;
+	
+}
+
+.shadowbox{
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.6)
+}
+
+.insetShadow{
+	box-shadow: inset 0px 3px 5px 0px #D6DD70;
+}
+
+*::-webkit-scrollbar {
+	width: 1em;
+  }
+   
+  *::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius:0.5em
+  }
+   
+  *::-webkit-scrollbar-thumb {
+	background-color: #5C5F30;
+	
+	border-radius:0.5em
+  }
+
+  @keyframes login-show{
+	0%{
+	transform: scale(0.5);
+	}
+   
+	100%{
+	transform: scale(1);
+	}
+   
+   }
+   .show-anim{
+	animation: login-show 0.2s;
+	
+	 }
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #5C5F30
+}
+}
+
+
+  

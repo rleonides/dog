@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fcc7d6b0.css",
+    "main.js": "/static/js/main.8d111c04.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/dogger_icon.png": "/static/media/dogger_icon.50aba92a395fea68bdef.png",
+    "static/media/dogger_logo.png": "/static/media/dogger_logo.04c86da12f369dd19593.png",
+    "index.html": "/index.html",
+    "main.fcc7d6b0.css.map": "/static/css/main.fcc7d6b0.css.map",
+    "main.8d111c04.js.map": "/static/js/main.8d111c04.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcc7d6b0.css",
+    "static/js/main.8d111c04.js"
+  ]
+}
