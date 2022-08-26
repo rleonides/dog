@@ -87,6 +87,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	color: #5C5F30
 }
+
+.shadow-btn{
+	box-shadow:  0px 5px 6px rgba(0, 0, 0, 0.3);
+}
 }
 
 

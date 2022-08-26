@@ -40,7 +40,7 @@ const Navbar = (props) => {
             </Link>
           </ButtonsContainer>
         ):(
-          <div className="flex items-center justify-center h-full wrap"> 
+          <div className="flex items-center justify-center h-full mr-2 wrap"> 
                {info?.role === 'Paseador'?(<img
               className={`hover:cursor-pointer hover:opacity-100  h-[70%] rounded-full [border:2px_solid_rgb(148_163_184)]`}
               src={dog_walker}
@@ -52,7 +52,7 @@ const Navbar = (props) => {
               alt=""
             />)}
 
-            <RiLogoutBoxRLine className='text-3xl   hover:text-[#5C5F30] font-bold hover:cursor-pointer text-[#D6DD70]'
+            <RiLogoutBoxRLine className='text-3xl ml-2   hover:text-[#5C5F30] font-bold hover:cursor-pointer text-[#D6DD70]'
            onClick={()=>logOut({type:'LOG_OUT'})}/>
            
            </div>

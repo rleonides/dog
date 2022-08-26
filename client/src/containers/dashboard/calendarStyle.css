@@ -6,7 +6,7 @@
     color:rgb(10, 71, 46);
     font-weight: bold;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
 
 
@@ -21,6 +21,8 @@
     display:flex;
     justify-content:center;
     align-items:center;
+   
+    flex-grow: 0 !important;
 }
 .react-calendar__navigation__label>span::first-letter{
     text-transform:uppercase; 
@@ -41,6 +43,10 @@
     padding:  5px;
     border-radius:50em;
    
-    
+
+}
+
+.react-calendar__month-view__days>button:hover{
+    background-color:rgba(183, 190, 176, 0.3);
 
 }
